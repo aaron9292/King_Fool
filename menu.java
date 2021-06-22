@@ -7,7 +7,6 @@ public class menu {
 		int play_again = 0;
 		int role = -1;
 		int choice = -1;
-		boolean win = false;
 		
 		while(play_again != 2) {
 			System.out.println("Would you like to play as the King or the Fool");
@@ -109,9 +108,12 @@ public class menu {
 				}
 			}
 			
+			System.out.println("Points: " + points);
 			System.out.println("Would you like to play again?");
 			System.out.println("Yes(1):No(2)");
 			play_again = scan.nextInt();
 		}
+		
+		scan.close();
 	}
 }
